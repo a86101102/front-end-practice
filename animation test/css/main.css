@@ -1,0 +1,191 @@
+
+.background {
+    position: absolute;
+    left: 10vw;
+    top: 0;
+    width: 80vw;
+    height: 100vh;
+    background-color: #dfdfdf;
+}
+
+/*--------------hand---------------*/
+.up-limbs {
+    text-align: center;
+}
+
+.up-limbs div {
+    display: inline-block;
+    margin-top: 240px;
+}
+
+.hand {
+    width: 90px;
+    height: 160px;
+    background-color: #333;
+    border-radius: 30% 30% 30% 120%;
+    z-index: 0;
+}
+
+#left-hand {
+    border-radius: 30% 30% 120% 30%;
+    transform: rotate(45deg);
+    margin-right: 50px;
+    animation-name: waving;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#right-hand {
+    transform: rotate(315deg);
+}
+
+/*---------------foot---------------*/
+.down-limbs {
+    text-align: center;
+}
+
+.down-limbs div {
+    display: inline-block;
+}
+
+.foot {
+    width: 80px;
+    height: 40px;
+    background-color: #ff9900;
+    border-radius: 60%;
+    z-index: 0;
+}
+
+#left-feet {
+    transform: rotate(345deg);
+}
+
+#right-feet {
+    transform: rotate(15deg);
+}
+
+/*---------------body-----------------*/
+
+.body {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 70% 70% 60% 60%;
+    top: 240px;
+    left: 514px;
+}
+
+.belly {
+    position: absolute;
+    width: 180px;
+    height: 160px;
+    border-radius: 70% 70% 60% 60%;
+    background-color: #FFF;
+    top: 27px;
+    left: 10px;
+    z-index: 3;
+}
+
+/*--------------head--------------*/
+
+.head {
+    position: absolute;
+    top: 110px;
+    left: 514px;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 70% 70% 60% 60%;
+}
+
+.face {
+    position: absolute;
+    width: 125px;
+    height: 150px;
+    background-color: #FFF;
+    border-radius: 80% 80% 60% 60%;
+    top: 22px;
+}
+
+#left-face {
+    left: 11px;
+}
+
+#right-face {
+    right: 11px;
+}
+
+.eye {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #000;
+    top: 55px;
+    z-index: 2;
+}
+
+#left-eye {
+    left: 25px;
+}
+
+#right-eye {
+    right: 25px;
+}
+
+.sparkle {
+    position: absolute;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #FFF;
+}
+
+#left-sparkle {
+    left: 0px;
+}
+
+#right-sparkle {
+    left: 0px;
+}
+
+.top-mouth {
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: orange;
+    left: 70px;
+    top: 130px;
+}
+
+.bottom-mouth {
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: orange;
+    top: 145px;
+    left: 80px;
+    z-index: 4;
+}
+
+/*------------animation---------------*/
+
+@keyframes waving {
+    0% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(105deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+
+
+

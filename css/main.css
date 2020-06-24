@@ -1,8 +1,8 @@
 @import "reset.css";
 
 .menu {
-    position: absolute;
-    height: 1000px;
+    position: relative;
+    height: 100vh;
     width: 25vw;
     background-color: #7C7C7C;
     float: left;
@@ -10,10 +10,8 @@
 }
 
 .content {
-    position: absolute;
-    left: 25vw;
-    width: 73.9vw;
-    max-height: 1000px;
+    margin-left: 25vw;
+    max-height: 100vh;
     background-color: #FDFDFD;
 }
 /*------------個人檔案-----------------*/
@@ -97,7 +95,7 @@
 .banner-info {
     position: absolute;
     top: 25px;
-    left: 25px;
+    margin-left: 30px;
 }
 
 .banner-info div {
@@ -150,7 +148,12 @@
 .article li {
     background-color: #cfcfcf;
     border: 1px #FFF solid;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+.article li :hover {
+    color: #FFF;
+    transition: 0.2s;
 }
